@@ -1,0 +1,3 @@
+mkdir app
+mkdir tests
+mkdir -p .github/workflows
