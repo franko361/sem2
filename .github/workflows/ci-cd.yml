@@ -20,6 +20,7 @@ jobs:
 
       - name: Ejecutar pruebas
         run: python -m unittest discover -s tests -p "test_*.py" -v
-
+      - name: Mostrar resultado de suma
+        run: python -c "from app.calculadora import sumar; print('2 + 3 =', sumar(2, 3))"
       - name: Despliegue simulado
         run: echo "Despliegue exitoso"
